@@ -1,0 +1,143 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <Windows.h>
+#include <locale.h>
+
+
+void cadastro_notas() {
+	system("cls");
+	printf("Cadastro de Notas/Alunos\n");
+	// agora vou digitar os dados de notas e alunos.
+	
+	
+	
+	system("pause");	
+	return;
+}
+void alteracao_notas() {
+	system("cls");
+	printf("Alteração de Notas/Alunos\n");
+	// agora vou alterar os dados de notas e alunos.
+	
+	
+	
+	system("pause");	
+	return;
+}
+
+int main() {	
+	setlocale(LC_ALL,"");
+	int opcao=0;
+	printf("Carregando o sistema... aguarde");
+	Sleep(500);
+
+	while ((opcao != 1) && (opcao !=2) && (opcao != 3)) {		
+		// opcoes do menu
+		system("cls");
+		printf("Bem vindo ao meu sistema\n\n");
+		printf("Menu\n");
+		printf("----\n");
+		printf("1-Cadastro de Notas/Alunos\n");
+		printf("2-Alteracao de Notas/Alunos\n");
+		printf("3-Sair\n");
+		printf("Opção: ");
+		scanf("%i",&opcao);
+		// verificando as opcoes
+		if (opcao == 1) {
+			cadastro_notas();
+			char aluno[5][10];
+	int contador, nomes, contador1;
+	float notas[5][10], media;
+	float totalnotas = 0;
+	
+	for (contador = 1; contador < 6; contador++ ){
+		totalnotas = 0;	
+			printf("aluno : ");    
+			scanf("%s/n",aluno[contador]);
+			
+				for (contador1 = 1; contador1 < 5; contador1++) {
+					printf("nota %i: ",contador1 );
+					scanf("%f", &notas[contador1][contador]);
+					totalnotas += notas[contador1][contador];
+					
+						}
+					media = totalnotas / 4;
+					printf("total de notas : %f\n", totalnotas);
+					printf("media das notas : %f\n", media);
+						if (media < 4) {
+						printf("O aluno esta reprovado\n");
+					} else{
+						if (media >= 4 and media  <=6){
+						printf("O aluno esta de recuperacao\n");
+							}
+					} 
+						if (media > 6) {
+						printf("O aluno esta aprovado\n");
+							}				
+				printf("--------------------------------\n");	
+				   }
+		 setlocale(LC_ALL,"");
+	int opcao=0;
+	printf("Carregando o sistema... aguarde");
+	Sleep(500);
+
+	while ((opcao != 1) && (opcao !=2) && (opcao != 3)) {		
+		// opcoes do menu
+		system("cls");
+		printf("Bem vindo ao meu sistema\n\n");
+		printf("Menu\n");
+		printf("----\n");
+		printf("1-Cadastro de Notas/Alunos\n");
+		printf("2-Alteracao de Notas/Alunos\n");
+		printf("3-Sair\n");
+		printf("Opção: ");
+		scanf("%i",&opcao);
+		 if (opcao == 2) {
+	
+	for (contador = 1; contador < 6; contador++ ){
+		totalnotas = 0;	    
+		printf("aluno: ");
+		printf("%s\n",aluno[contador]);
+			
+				for (contador1 = 1; contador1 < 5; contador1++) {
+					printf("nota %i: ",contador1 );
+					scanf("%f", &notas[contador1][contador]);
+					totalnotas += notas[contador1][contador];
+					
+						}
+					media = totalnotas / 4;
+					printf("total de notas : %f\n", totalnotas);
+					printf("media das notas : %f\n", media);
+						if (media < 4) {
+						printf("O aluno esta reprovado\n");
+					} else{
+						if (media >= 4 and media  <=6){
+						printf("O aluno esta de recuperacao\n");
+							}
+					} 
+						if (media > 6) {
+						printf("O aluno esta aprovado\n");
+							}				
+				printf("--------------------------------\n");	
+				   }
+		setlocale(LC_ALL,"");
+	int opcao=0;
+	printf("Carregando o sistema... aguarde");
+	Sleep(500);
+
+	while ((opcao != 1) && (opcao !=2) && (opcao != 3)) {		
+		// opcoes do menu
+		system("cls");
+		printf("Bem vindo ao meu sistema\n\n");
+		printf("Menu\n");
+		printf("----\n");
+		printf("1-Cadastro de Notas/Alunos\n");
+		printf("2-Alteracao de Notas/Alunos\n");
+		printf("3-Sair\n");
+		printf("Opção: ");
+		scanf("%i",&opcao);	 }
+		}
+	  	
+   }
+}
+}
